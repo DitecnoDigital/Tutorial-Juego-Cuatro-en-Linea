@@ -12,6 +12,7 @@ bool RevisarVertical(int, int, char);
 bool RevisarDiagonal(int, int, char);
 bool RevisarDiagonalInvertida(int, int, char);
 
+//Para Linux
 char tablero[8][9]={{{'#'},{' '},{' '},{' '}, {' '}, {' '}, {' '}, {' '} , {'#'}},
 					{{'#'},{' '},{' '},{' '}, {' '}, {' '}, {' '}, {' '} , {'#'}},
 					{{'#'},{' '},{' '},{' '}, {' '}, {' '}, {' '}, {' '} , {'#'}},
@@ -20,6 +21,16 @@ char tablero[8][9]={{{'#'},{' '},{' '},{' '}, {' '}, {' '}, {' '}, {' '} , {'#'}
 					{{'#'},{' '},{' '},{' '}, {' '}, {' '}, {' '}, {' '} , {'#'}},
 					{{'#'},{'#'},{'#'},{'#'}, {'#'}, {'#'}, {'#'}, {'#'} , {'#'}},
 					{{' '},{'1'},{'2'},{'3'}, {'4'}, {'5'}, {'6'}, {'7'} , {' '}},};
+/*Para Windows
+char tablero[8][9]={{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#',' ',' ',' ', ' ', ' ', ' ', ' ' , '#'},
+			{'#','#','#','#', '#', '#', '#', '#' , '#'},
+			{' ','1','2','3', '4', '5', '6', '7' , ' '}};
+*/
 
 char eleccion;
 char turno;
@@ -56,10 +67,17 @@ int main(){
 }
 
 void LimpiarPantalla(){
+	//Para Linux
 	if(system("clear") == -1){
 		cout<<"Error al limpiar la pantalla."<<endl;
 		LimpiarPantalla();
 	}
+	/*Para Windows
+	if(system("cls") == -1){
+		cout<<"Error al limpiar la pantalla."<<endl;
+		LimpiarPantalla();
+	}
+	*/
 }
 
 void LimpiarTablero(){
