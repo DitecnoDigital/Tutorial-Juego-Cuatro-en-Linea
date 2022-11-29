@@ -1,3 +1,5 @@
+![This is me](https://github.com/DitecnoDigital/Tutorial-Juego-Cuatro-en-Linea/blob/main/PortadaCuatroenLinea.png)
+
 # Juego "Cuatro en Linea"
 Tutorial de como realizar "Cuatro en Linea" en C++ donde puedes ver el paso a paso en:
 
